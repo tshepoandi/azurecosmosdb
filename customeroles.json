@@ -1,12 +1,18 @@
 {
-    "roleName": "Custom Cosmos DB Role",
-    "type": "CustomRole",
-    "assignableScopes": ["/"],
-    "permissions": [{
-        "dataActions": [
+    "RoleName": "Custom Cosmos DB Role",
+    "Type": "CustomRole",
+    "AssignableScopes": [
+        "/subscriptions/3f23e1d8-ebf4-44da-bb96-eb44a8555e0e/resourceGroups/tshepo-cosmos-db-training/providers/Microsoft.DocumentDB/databaseAccounts/intern-diaries-practice"
+    ],
+    "Permissions": [{
+        "DataActions": [
             "Microsoft.DocumentDB/databaseAccounts/readMetadata",
             "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/create",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/delete",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/upsert",
             "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/executeQuery",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/replace",
             "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/readChangeFeed"
         ]
     }]
