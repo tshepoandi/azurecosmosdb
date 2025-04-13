@@ -1,0 +1,13 @@
+{
+    "roleName": "Custom Cosmos DB Role",
+    "type": "CustomRole",
+    "assignableScopes": ["/"],
+    "permissions": [{
+        "dataActions": [
+            "Microsoft.DocumentDB/databaseAccounts/readMetadata",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/items/read",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/executeQuery",
+            "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/readChangeFeed"
+        ]
+    }]
+}
